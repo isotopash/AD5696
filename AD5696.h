@@ -1,7 +1,7 @@
 /**************************************************************************/
 /*!
       @file     AD5696.h
-      @author   A. Cooper (Aesc)
+      @author   A. Cooper (Isotopash)
 	    @license  None (see license.txt)
 
 	This is a library for the A5696 4 Channel I2C DAC

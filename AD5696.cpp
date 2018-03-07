@@ -1,7 +1,7 @@
 /**************************************************************************/
 /*!
     @file     AD5696.cpp
-    @author   A. Cooper (Aesc)
+    @author   A. Cooper (Isotopash)
     @license  None (see license.txt)
 
 	This is a library for the AD5696 4 Channel I2C DAC
@@ -14,7 +14,7 @@
   DAC_C     2     V     GND
   DAC_D     3     V     V
 
- i2c adrres is 7 bit. 5 Most Significant Bits are 00011. The last 2 Bits
+ i2c address is 7 bit. 5 Most Significant Bits are 00011. The last 2 Bits
  are the address given by A1 and A0 pins.
 
 

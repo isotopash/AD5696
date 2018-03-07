@@ -1,7 +1,7 @@
 /**************************************************************************/
 /*!
     @file     AD5696Demo.ino
-    @author   A. Cooper (Aesc)
+    @author   A. Cooper (Isotopash)
     @license  None (see license.txt)
 
     Simple Example for the AD5696 DAC.
