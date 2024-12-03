@@ -1,0 +1,23 @@
+Explanation of the Example:
+Initialization:
+
+The dac.begin() function initializes I2C communication.
+The DAC is then ready to receive commands.
+Setting DAC Output:
+
+The dac.setDAC() function is used to set the output voltage on specific DAC channels. For example, dac.setDAC(DAC_ADDRESS, CH_A, WriteUpdate, 32768) sets DAC_A to a value of 32768 (which is roughly half of the maximum value 65536).
+Similarly, DAC_B and DAC_C are set to values 16384 and 49152, respectively.
+Reading DAC Values:
+
+The dac.readDAC() function reads the DAC values from the specified channels. In this example, it reads the values of DAC_A and DAC_B into the readValues array and prints the values to the serial monitor.
+Setting Power State:
+
+The dac.setPowerState() function is used to set the power-down state of the DACs. For example, DAC_A is set to 100kΩ mode (low power state), while DAC_B remains active.
+Reset:
+
+The dac.reset() function resets the DAC to its power-on state.
+Notes:
+DAC Address: In the example, the DAC address is set to 0x08 (DAC_A), but you can change this to 0x09, 0x0A, or 0x0B depending on which DAC you are using (based on the configuration of pins A1 and A0).
+Serial Monitor: The serial monitor is used to display the status of the DAC settings (such as when channels are set to specific values or powered down).
+Channel Flags:
+CH_A, CH_B, CH_C, CH_D refer to the DAC channels. You can combine these flags with the bitwise OR (|) operator to control multiple channels at once. For example, CH_A | CH_B would select both channels A and B.

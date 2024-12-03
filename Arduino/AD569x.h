@@ -1,16 +1,15 @@
 /**************************************************************************/
 /*!
-      @file     AD5696.h
+      @file     AD569x.h
       @author   A. Cooper (Isotopash)
 	    @license  None (see license.txt)
 
-	This is a library for the A5696 4 Channel I2C DAC
-	----> https://www.mouser.co.uk/ProductDetail/584-AD5696ARUZ?r 584-AD5696ARUZ
-
+	This is a library for the A569x 4 Channel I2C DAC
 
 	@section  HISTORY
 
     v1.0  - First release
+    V1.0.1 - Code Cleanup 
 */
 /**************************************************************************/
 
@@ -48,9 +47,9 @@
 
 
 
-class AD5696{
+class AD569x{
  public:
-  AD5696();
+  AD569x();
   void begin();
   void setDAC(uint8_t addr, uint8_t channel, uint8_t operation, uint16_t value);
   void readDAC(uint8_t addr, uint8_t channel, uint8_t operation, uint16_t *returnArray);

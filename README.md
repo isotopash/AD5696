@@ -1,5 +1,4 @@
-AD5696
+AD569x
 ================
 
-This is Ash's Arduino Analog Devices AD5696 Library.
-Library according to AD5696ARUZ datasheet.
+This is Ash's Analog Devices AD569x Libraries for both Arduino and Raspberry Pi (Python).
